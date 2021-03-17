@@ -105,7 +105,7 @@ def get_html(url, trains=('059','015'), vtypes=("Плацкарт",), pnum=1, pt
         pass
     
     html_source = driver.page_source
-    F = open(prefixfile+'.html', encoding='utf-8', mode="wt"); F.write(html_source); F.close()
+    F = open(prefixfile+'.html.log', encoding='utf-8', mode="wt"); F.write(html_source); F.close()
     
     All_Train_Find = False
     for TrainS in driver.find_elements_by_class_name("route-items-cont") :
