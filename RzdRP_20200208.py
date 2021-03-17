@@ -196,6 +196,18 @@ def get_html(url, trains=('059','015'), vtypes=("Плацкарт",), pnum=1, pt
         exit(0)
     
     return
+#    
+#def Send_sms_old(str_out="RZD-Finder:  Есть Билеты".encode('utf-8'), tels =("9128569772",) ):   # str-out in utf-8 codding
+#
+#    for tel in tels :
+#        println("=== sending sms to {0} ===".format(tel))
+#        
+#        if TEST_MODE : return
+#        #  Send by SMS.RU
+#        sms_url = 'http://sms.ru/sms/send?api_id=EB7A3F24-D7A8-71D2-727A-27EF3347AA3E&to=7{0}&text={1}'.format(tel,str_out)
+#        try:    GIS = urllib.urlopen(sms_url)
+#        except: print("ERROR  send  SMS")
+#        GIS.close()       
 
 def Send_sms(str_out="RZD-Finder:  Есть Билеты", tels =("9128569772",) ):   # str-out in utf-8 codding
 
